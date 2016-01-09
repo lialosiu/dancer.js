@@ -25,6 +25,7 @@
       // Loading an object with src, [codecs]
       } else {
         this.source = window.Audio ? new Audio() : {};
+        this.source.crossOrigin = "anonymous";
         this.source.src = Dancer._makeSupportedPath( source.src, source.codecs );
       }
 
