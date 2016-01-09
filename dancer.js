@@ -1,5 +1,5 @@
 /*
- * dancer - v0.4.0 - 2016-01-09
+ * dancer - v0.4.2 - 2016-01-09
  * https://github.com/jsantell/dancer.js
  * Copyright (c) 2016 Jordan Santell
  * Licensed MIT
@@ -13,7 +13,7 @@
     this.bind( 'update', update );
   };
 
-  Dancer.version = '0.4.0';
+  Dancer.version = '0.4.2';
   Dancer.adapters = {};
 
   Dancer.prototype = {
