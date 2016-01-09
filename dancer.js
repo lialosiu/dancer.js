@@ -1,5 +1,5 @@
 /*
- * dancer - v0.4.2 - 2016-01-09
+ * dancer - v0.4.2 - 2016-01-10
  * https://github.com/jsantell/dancer.js
  * Copyright (c) 2016 Jordan Santell
  * Licensed MIT
@@ -404,9 +404,11 @@
       this.signal = new Float32Array( SAMPLE_SIZE / 2 );
 
       if ( this.audio.readyState < 3 ) {
-        this.audio.addEventListener( 'canplay', function () {
+        function canplayListener(){
           connectContext.call( _this );
-        });
+          _this.audio.removeEventListener( 'canplay' , canplayListener);
+        }
+        this.audio.addEventListener( 'canplay', canplayListener);
       } else {
         connectContext.call( _this );
       }
