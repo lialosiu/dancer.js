@@ -1,0 +1,33 @@
+{
+  "name": "lialosiu-dancer",
+  "version": "0.4.0",
+  "description": "dancer.js is a high-level audio API, usable with the Web Audio API, Mozilla's Audio Data API and flash fallback, designed to make sweet visualizations.",
+  "main": [
+    "lib/fft.js",
+    "lib/flash_detect.js",
+    "plugins/dancer.fft.js",
+    "plugins/dancer.waveform.js",
+    "dancer.js"
+  ],
+  "authors": [
+    "Jordan Santell"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/lialosiu/dancer.js",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "examples",
+    "spec",
+    "src",
+    "Gruntfile.js",
+    "package.json"
+  ],
+  "keywords": [
+    "dancer",
+    "audio"
+  ]
+}
