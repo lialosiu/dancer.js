@@ -38,9 +38,11 @@
       this.signal = new Float32Array( SAMPLE_SIZE / 2 );
 
       if ( this.audio.readyState < 3 ) {
-        this.audio.addEventListener( 'canplay', function () {
+        function canplayListener(){
           connectContext.call( _this );
-        });
+          _this.audio.removeEventListener( 'canplay' , canplayListener);
+        }
+        this.audio.addEventListener( 'canplay', canplayListener);
       } else {
         connectContext.call( _this );
       }
