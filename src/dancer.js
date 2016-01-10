@@ -7,7 +7,7 @@
     this.bind( 'update', update );
   };
 
-  Dancer.version = '0.4.2';
+  Dancer.version = '0.4.3';
   Dancer.adapters = {};
 
   Dancer.prototype = {

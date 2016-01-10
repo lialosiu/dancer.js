@@ -1,7 +1,7 @@
 {
   "name": "dancer",
   "description": "dancer.js is a high-level audio API, usable with the Web Audio API, Mozilla's Audio Data API and flash fallback, designed to make sweet visualizations.",
-  "version": "0.4.2",
+  "version": "0.4.3",
   "homepage": "https://github.com/jsantell/dancer.js",
   "author": {
     "name": "Jordan Santell",
